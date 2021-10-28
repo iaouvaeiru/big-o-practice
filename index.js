@@ -2,6 +2,7 @@ const {
     performance
   } = require('perf_hooks');
 
+// big O = O(n)  
 function addUpTo(n){
     let total = 0;
     for (let i = 0; i <= n; i++){
@@ -10,6 +11,8 @@ function addUpTo(n){
     return total
 }
 
+
+// big O = O(1)
 function fasterSum(n){
     return n * (n + 1) / 2;
 }
