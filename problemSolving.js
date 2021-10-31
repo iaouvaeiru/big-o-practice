@@ -21,4 +21,4 @@ function validAnagram(str1, str2){
 }
 
 
-console.log(validAnagram("werwe", "werwe"))
+console.log(validAnagram("werwe", "wweer"))
