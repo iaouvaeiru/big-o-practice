@@ -1,3 +1,28 @@
+function sameFrequency(num1, num2){
+    // good luck. Add any arguments you deem necessary.
+    if (num1.length !== num2.length){
+        return false;
+    }
+    let number1 = {};
+    let number2 = {};
+    for (let digit of num1.toString()){
+        number1[digit] = (number1[digit] || 0) + 1;
+    }
+    for (let digit of num2.toString()){
+        number2[digit] = (number2[digit] || 0) + 1;
+    }
+    console.log(number1)
+    console.log(number2)
+    for (let key in number1){
+        if(number1[key] !== number2[key]){
+            return false;
+        }
+    }
+    return true;
+}
+
+//console.log(sameFrequency(123123, 321321))
+
 function areThereDuplicates(...args) {
     // good luck. (supply any arguments you deem necessary.)
     let frequecyCounter = {}
