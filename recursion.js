@@ -28,5 +28,27 @@ function productOfArray(array){
     }
     return array[0] * productOfArray(array.splice(1))
 }
-console.log(productOfArray([1,2,3,4]))
 
+// recursive range function
+// sums all the numbers from 0 to target number
+function recursiveRange(number){
+   // base case 0
+   if (number === 0) {
+       return 0
+   }
+   // number decreases with each recursion
+   return number + recursiveRange(number - 1)
+}
+
+// fibbonacci sequence function
+// returns the nth number of the fibbonacci sequence where n is the input
+function fib(n){
+    if (n < 2){
+        return 1
+    }
+    // this is just the fibbonacci equation
+    // not much else to it but it works i suppose
+    return fib(n-1) + fib(n-2)
+    
+}
+console.log(fib(29))
