@@ -18,3 +18,7 @@ function factorial(n){
     ans = n * factorial(n - 1);
     return ans;
  }
+
+ function productOfArray(){
+     
+ }
