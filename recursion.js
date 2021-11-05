@@ -10,13 +10,14 @@ function power(number, powerOf){
 
 // factorial function does n!
 function factorial(n){
-    let ans = 1;
     // base case is 0
+    if (n < 0){
+        return undefined
+    }
     if (n === 0){
         return 1;
     }
-    ans = n * factorial(n - 1);
-    return ans;
+    return n * factorial(n - 1);
 }
 
 // product of array function
@@ -50,4 +51,4 @@ function fib(n){
     // not much else to it but it works i suppose
     return fib(n-1) + fib(n-2)  
 }
-console.log(fib(3))
+console.log(factorial(-3))
