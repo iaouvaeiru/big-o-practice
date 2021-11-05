@@ -17,8 +17,16 @@ function factorial(n){
     }
     ans = n * factorial(n - 1);
     return ans;
- }
+}
 
- function productOfArray(){
-     
- }
+// product of array function
+// returns value at index 0 * value of index 1.
+//splice mutates array so each recursion the value of index 1 is different
+function productOfArray(array){
+    if (array.length === 0){
+        return 1
+    }
+    return array[0] * productOfArray(array.splice(1))
+}
+console.log(productOfArray([1,2,3,4]))
+
