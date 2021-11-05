@@ -43,12 +43,11 @@ function recursiveRange(number){
 // fibbonacci sequence function
 // returns the nth number of the fibbonacci sequence where n is the input
 function fib(n){
-    if (n < 2){
+    if (n <= 2){
         return 1
     }
     // this is just the fibbonacci equation
     // not much else to it but it works i suppose
-    return fib(n-1) + fib(n-2)
-    
+    return fib(n-1) + fib(n-2)  
 }
-console.log(fib(29))
+console.log(fib(3))
