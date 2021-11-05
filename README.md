@@ -1,1 +1,1 @@
-# big-o-practice
+# ds-algos practice
