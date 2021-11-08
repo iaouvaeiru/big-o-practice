@@ -51,4 +51,14 @@ function fib(n){
     // not much else to it but it works i suppose
     return fib(n-1) + fib(n-2)  
 }
-console.log(factorial(-3))
+
+// takes a string and returns the string backwards
+function reverse(string){
+    if (string.length <= 1){
+        return string
+    }
+    return reverse(string.slice(1)) + string[0]
+
+
+}
+console.log(reverse('one day i will understand this'))
