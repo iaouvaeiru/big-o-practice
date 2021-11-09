@@ -58,7 +58,10 @@ function reverse(string){
         return string
     }
     return reverse(string.slice(1)) + string[0]
-
-
 }
-console.log(reverse('one day i will understand this'))
+
+
+function isPalindrome(){
+    // add whatever parameters you deem necessary - good luck!
+  }
+
