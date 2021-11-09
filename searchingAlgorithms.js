@@ -8,6 +8,19 @@ function linearSearch(arr, value){
     return -1
 }
 
+function recursiveLinearSearch(arr, value){
+    let index = 0
+    function helper(index){
+        if (index === arr.length){
+            return -1
+        } else if (arr[index] === value){
+            return index
+        }
+        return helper(index + 1)
+    }
+    return helper(index)
+}
+
 //binary search.
 function binarySearch(arr, value){
     let left = 0;
@@ -43,4 +56,5 @@ function naiveString(long, short){
     return count
 }
 
-console.log(naiveString("woweezoweewowee", "wow"))
+console.log(recursiveLinearSearch([1,2,3,4,5,6,7,8,9,10,11,12], 13))
+console.log(linearSearch([1,2,3,4,5,6,7,8,9,10,11,12], 13))
