@@ -1,3 +1,4 @@
+// bubble sort. O(n^2) not efficient
 function bubbleSort(arr){
     let noSwap
     for(let i = arr.length; i > 0; i--){
