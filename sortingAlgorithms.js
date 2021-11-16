@@ -22,7 +22,7 @@ function bubbleSort(arr){
 
 console.log(bubbleSort([4,3,6,32,77]))
 
-// selection sort
+// selection sort. more efficient than bubbleSort
 function selectionSort(){
-    
+
 }
