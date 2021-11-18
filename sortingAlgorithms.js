@@ -23,6 +23,21 @@ function bubbleSort(arr){
 console.log(bubbleSort([4,3,6,32,77]))
 
 // selection sort. more efficient than bubbleSort
-function selectionSort(){
-
+function selectionSort(arr){
+    for (let i = 0; i < arr.length; i++){
+        let minValIndex = i
+        for (let j = i + 1; j < arr.length; j++){
+            if (arr[j] < arr[minValIndex]){
+                minValIndex = j
+            }
+        }
+        if (i !== lowest){
+            let temp = arr[i];
+            arr[i] = arr[minValIndex];
+            arr[minValIndex] = temp
+        }
+    }
+    return arr
 }
+
+console.log(selectionSort([3,2,5,1,6,0]))
