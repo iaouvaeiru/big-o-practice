@@ -22,7 +22,10 @@ function bubbleSort(arr){
 
 console.log(bubbleSort([4,3,6,32,77]))
 
-// selection sort. more efficient than bubbleSort
+// selection sort. O(n^2) more efficient than bubble sort if trying to avoid writing to memory
+// because there is only 1 swap per loop through rather than swapping each value until the biggest
+// value reaches the end like in bubble sort.
+// Otherwise its inefficient just like bubble sort
 function selectionSort(arr){
     for (let i = 0; i < arr.length; i++){
         let minValIndex = i
