@@ -43,4 +43,6 @@ function selectionSort(arr){
     return arr
 }
 
+// can write a separate swap function and call it in the sort functions instead of repeating it each time
+
 console.log(selectionSort([3,2,5,1,6,0]))
