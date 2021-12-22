@@ -77,3 +77,14 @@ function maxSubarraySum(arr, num){
 
 //console.log(maxSubarraySum([1,2,3,4,6], 2))
 
+function letterInAWord(str, target){
+    let count = 0;
+    for(letter in str){
+        if(str[letter] === target){
+            count += 1
+        }
+    }
+    return count
+}
+
+console.log(letterInAWord('abcdefbbbga', 'b'))
