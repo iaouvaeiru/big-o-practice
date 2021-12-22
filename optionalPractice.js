@@ -87,4 +87,38 @@ function letterInAWord(str, target){
     return count
 }
 
-console.log(letterInAWord('abcdefbbbga', 'b'))
+//console.log(letterInAWord('abcdefbbbga', 'b'))
+
+function isPalindrome(str){
+    let left = 0
+    let right = str.length - 1
+    for(let i = 0; i < Math.floor(str.length/2); i++){
+        if(str[left] !== str[right]){
+            return false
+        }
+        left += 1
+        right -= 1    
+    }
+    return true
+}
+
+//console.log(isPalindrome('abcdefgfedcba'))
+
+function longestPalindrome(str){
+    let longest = ''
+    let temp = ''
+    let length = str.length
+    for(let i = 0; i < str.length; i++){
+        for(let j = 0; j < str.length; j++){
+            temp = str.substr(j,length)
+            if(isPalindrome(temp) && temp.length > longest.length){
+                longest = temp
+            }
+        }
+        length--
+    }
+    return longest
+}
+
+
+console.log(longestPalindrome('babad'))
