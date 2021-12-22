@@ -56,7 +56,7 @@ function averagePair(arr, num){
     }
     return false
   }
-console.log(averagePair([1,2,3,11,], 7))
+//console.log(averagePair([1,2,3,11,], 7))
 
 function maxSubarraySum(arr, num){
     // add whatever parameters you deem necessary - good luck!
@@ -75,4 +75,5 @@ function maxSubarraySum(arr, num){
     return maxSum;
 }
 
-console.log(maxSubarraySum([1,2,3,4,6], 2))
+//console.log(maxSubarraySum([1,2,3,4,6], 2))
+
