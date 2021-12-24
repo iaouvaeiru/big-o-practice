@@ -20,7 +20,6 @@ function sameFrequency(num1, num2){
     }
     return true;
 }
-
 //console.log(sameFrequency(123123, 321321))
 
 function areThereDuplicates(...args) {
@@ -34,7 +33,6 @@ function areThereDuplicates(...args) {
     }
     return false
   }
-
 //console.log(areThereDuplicates(1,1,1,2))
 
 
@@ -74,7 +72,6 @@ function maxSubarraySum(arr, num){
     }
     return maxSum;
 }
-
 //console.log(maxSubarraySum([1,2,3,4,6], 2))
 
 function letterInAWord(str, target){
@@ -86,7 +83,6 @@ function letterInAWord(str, target){
     }
     return count
 }
-
 //console.log(letterInAWord('abcdefbbbga', 'b'))
 
 function isPalindrome(str){
@@ -101,7 +97,6 @@ function isPalindrome(str){
     }
     return true
 }
-
 //console.log(isPalindrome('abcdefgfedcba'))
 
 function longestPalindrome(str){
@@ -119,6 +114,5 @@ function longestPalindrome(str){
     }
     return longest
 }
+//console.log(longestPalindrome('babad'))
 
-
-console.log(longestPalindrome('babad'))
