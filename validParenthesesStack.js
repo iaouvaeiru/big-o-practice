@@ -22,4 +22,5 @@ function parenthesesConverter(char){
         return '}'
     }
 }
+
 console.log(validParentheses(''))

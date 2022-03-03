@@ -116,3 +116,14 @@ function longestPalindrome(str){
 }
 //console.log(longestPalindrome('babad'))
 
+
+//given an array, remove all instances of val from the array
+let removeElement = function(nums, val) {
+    while(nums.indexOf(val) > -1){
+        for(let index in nums){
+            if(nums[index] === val){
+                nums.splice(index, 1)
+            }
+        }
+    }
+};
